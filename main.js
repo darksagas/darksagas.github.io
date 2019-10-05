@@ -4,7 +4,7 @@ mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-if (document.body.scrollTop > document.body.offsetHeight - 50 || document.documentElement.scrollTop > document.body.offsetHeight - 50) {
+if (document.body.scrollTop > document.body.offsetHeight || document.documentElement.scrollTop > document.body.offsetHeight) {
     mybutton.style.display = "block";
 } else {
     mybutton.style.display = "none";

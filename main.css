@@ -21,14 +21,24 @@ body, html {
     /* The image used */
     background-image: url("img_parallax_2.jpg");
   
-    min-height: 100%;
-  
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     opacity: 0.80;
+}
+
+.parallax_3 {
+  /* The image used */
+  background-image: url("img_parallax_3.jpg");
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 0.80;
 }
 
 .caption {
@@ -149,4 +159,37 @@ label {
   
   #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  .about_me {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+  }
+
+  .about_me__img {
+    border-radius: 50%;
+    height: 250px;
+    width: auto;
+    padding: 50px;
+  }
+
+  .about_me__left {
+    flex: 0.5;
+    text-align: center;
+  }
+
+  .about_me__right {
+    flex: 0.5;
+    padding: 50px;
+    background-color: #000;
+    margin: 30px;
+  }
+
+  .about_me__content {
+    color: #FFF;
+  }
+
+  .no-opacity {
+    opacity: 1;
   }
