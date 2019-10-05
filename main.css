@@ -1,0 +1,152 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("img_parallax.jpg");
+  
+    min-height: 100%;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 0.80;
+}
+
+.parallax_2 {
+    /* The image used */
+    background-image: url("img_parallax_2.jpg");
+  
+    min-height: 100%;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 0.80;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption_2 {
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    font-family: 'Mansalva', cursive;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.borderLight {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero__content{
+    font-style: italic;
+}
+
+/** code by webdevtrick ( https://webdevtrick.com ) */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+ 
+.tabs label {
+  order: 1;
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background:  #3CC0F8;
+  font-weight: bold;
+  transition: background ease 0.2s;
+}
+ 
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+}
+ 
+.tabs input[type="radio"] {
+  display: none;
+}
+ 
+.tabs input[type="radio"]:checked + label {
+  background: #fff;
+}
+ 
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+ 
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+ 
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    background-image: linear-gradient(to right, #aa809d, #e63973);
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
